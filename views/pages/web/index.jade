@@ -1,0 +1,16 @@
+extends ../../web/layout
+
+block content
+  .page-content.padding-30.blue-grey-500
+    ul.blocks.blocks-100.blocks-xlg-4.blocks-md-3.blocks-sm-2
+      each item in movies
+        li.masonry-item
+          div.widget.widget-article.widget-shadow
+            div.widget-header.cover
+              img.cover-image(src="#{item.poster}", alt="#{item.title}")
+            div.widget-body
+              h3.widget-title #{item.title}
+              p.widget-metas.type-link 上映时间 #{item.year} 年
+              p #{item.summary}
+              div.widget-body-footer
+                a.btn.btn-outline.btn-primary(href="/movie/#{item._id}") 观看预告片

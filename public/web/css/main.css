@@ -1,0 +1,36 @@
+*{margin: 0;padding: 0}
+ul,li{
+	list-style: none;
+}
+html{
+	background-color: #f2f2f2;
+}
+.row.edit-warp{
+	width: 60%;
+	margin: 30px auto;
+}
+.row.edit-warp .btn{
+	width: 50%;
+	margin: 0 auto;
+	height: 42px;
+}
+.row.edit-warp .form-control{
+	height: 42px;
+}
+.row.list-warp{
+	margin-top: 30px;
+}
+/**/
+.content{
+    position: absolute;
+    left: 134px;
+    right: 0;
+    top: 50px;
+    bottom: 0;
+    width: auto;
+    padding: 18px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    min-width: 1024px;
+    background: #fff;
+}

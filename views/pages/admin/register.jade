@@ -1,0 +1,32 @@
+extends ../layout
+
+block content
+  link(href="/css/login.css", rel="stylesheet")
+  .login-full
+    div.page-login-main
+      div.login-warp
+        h3 user -- admin
+        .form-group.has-feedback
+          select.form-control
+            each book in [{name:'管理员',val:999},{name:'游客',val:1},{name:'编辑者',val:2}]
+              option(value=book.val) #{book.name}
+        //- 隐藏表单域，用来更新电影数据，存储电影ID
+        .form-group.has-feedback
+          input#inputUser.form-control(type="text", name="userName", value="")
+        .form-group.has-feedback
+          input#inputPwd.form-control(type="text", name="userPwd", value="")
+        .form-group
+          button.btn.btn-primary.btn-block.margin-top-30.login-bnt#loginAdd 用户注册
+  script(src="/admin/js/admin.js")
+  //- script(type='text/javascript').
+  //-   $(document).ready(function() {
+  //-     alert('kdididididi');
+  //-     $('#tabs a:first').tab('show');
+  //-     $('#tabs a').click(function (e) {
+  //-       e.preventDefault();
+  //-         $(this).tab('show');
+  //-     });
+  //-     $('#btn1').click(function() {
+  //-       alert('aaaa');
+  //-     });
+  //-   });

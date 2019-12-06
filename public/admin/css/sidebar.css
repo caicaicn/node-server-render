@@ -1,0 +1,43 @@
+.sidebar{
+    display: block;
+    position: absolute;
+    width: 132px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: #242f42;
+    z-index: 9999;
+}
+.admin-login{
+    position: relative;
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+    cursor: pointer;
+    margin: 10px 0;
+    overflow: hidden;
+}
+.admin-login img{
+    width: 80px;
+    border-radius: 50%;
+}
+.left-mune .menu-item {
+    height: 42px;
+    line-height: 42px;
+    font-size: 12px;
+    color: hsla(0,0%,100%,.67);
+    font-size: 14px;
+    padding: 0 20px;
+    cursor: pointer;
+    -webkit-transition: border-color .3s,background-color .3s,color .3s;
+    transition: border-color .3s,background-color .3s,color .3s;
+    box-sizing: border-box;
+}
+.left-mune .menu-item i{
+    font-style: normal; 
+}
+.left-mune .menu-item:hover,
+.left-mune .menu-item.is-active{
+    color: #fff;
+    background-color: #409eff;
+}
